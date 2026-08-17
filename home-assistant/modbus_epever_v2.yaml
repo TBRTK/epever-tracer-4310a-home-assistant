@@ -1,0 +1,38 @@
+# Add in configuration.yaml: modbus: !include modbus_epever_v2.yaml
+- name: epever
+  type: serial
+  method: rtu
+  port: /dev/serial/by-id/usb-FTDI_USB-RS485_Cable_AV0M39PA-if00-port0
+  baudrate: 115200
+  bytesize: 8
+  parity: N
+  stopbits: 1
+  timeout: 3
+  sensors:
+    - {name: EPever PV Voltage, slave: 1, address: 12544, input_type: input, data_type: uint16, scale: 0.01, precision: 2, unit_of_measurement: V, device_class: voltage, state_class: measurement}
+    - {name: EPever PV Current, slave: 1, address: 12545, input_type: input, data_type: uint16, scale: 0.01, precision: 2, unit_of_measurement: A, device_class: current, state_class: measurement}
+    - {name: EPever PV Power, slave: 1, address: 12546, input_type: input, data_type: uint32, swap: word, scale: 0.01, precision: 2, unit_of_measurement: W, device_class: power, state_class: measurement}
+    - {name: EPever Battery Voltage, slave: 1, address: 12548, input_type: input, data_type: uint16, scale: 0.01, precision: 2, unit_of_measurement: V, device_class: voltage, state_class: measurement}
+    - {name: EPever Battery Charge Current, slave: 1, address: 12549, input_type: input, data_type: uint16, scale: 0.01, precision: 2, unit_of_measurement: A, device_class: current, state_class: measurement}
+    - {name: EPever Battery Charge Power, slave: 1, address: 12550, input_type: input, data_type: uint32, swap: word, scale: 0.01, precision: 2, unit_of_measurement: W, device_class: power, state_class: measurement}
+    - {name: EPever Load Voltage, slave: 1, address: 12556, input_type: input, data_type: uint16, scale: 0.01, precision: 2, unit_of_measurement: V, device_class: voltage, state_class: measurement}
+    - {name: EPever Load Current, slave: 1, address: 12557, input_type: input, data_type: uint16, scale: 0.01, precision: 2, unit_of_measurement: A, device_class: current, state_class: measurement}
+    - {name: EPever Load Power, slave: 1, address: 12558, input_type: input, data_type: uint32, swap: word, scale: 0.01, precision: 2, unit_of_measurement: W, device_class: power, state_class: measurement}
+    - {name: EPever Battery Temperature, slave: 1, address: 12560, input_type: input, data_type: int16, scale: 0.01, precision: 2, unit_of_measurement: '°C', device_class: temperature, state_class: measurement}
+    - {name: EPever Controller Temperature, slave: 1, address: 12561, input_type: input, data_type: int16, scale: 0.01, precision: 2, unit_of_measurement: '°C', device_class: temperature, state_class: measurement}
+    - {name: EPever Battery SOC, slave: 1, address: 12570, input_type: input, data_type: uint16, unit_of_measurement: '%', state_class: measurement}
+    - {name: EPever Battery Status Raw, slave: 1, address: 12800, input_type: input, data_type: uint16}
+    - {name: EPever Charging Status Raw, slave: 1, address: 12801, input_type: input, data_type: uint16}
+    - {name: EPever Discharging Status Raw, slave: 1, address: 12802, input_type: input, data_type: uint16}
+  switches:
+    - name: EPever Load
+      slave: 1
+      address: 2
+      write_type: coil
+      command_on: 1
+      command_off: 0
+      verify:
+        input_type: coil
+        address: 2
+        state_on: 1
+        state_off: 0
