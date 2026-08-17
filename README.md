@@ -31,3 +31,11 @@ Charging state from `0x3201` bits D3–D2:
 - Battery system: 24 V nominal, 2 × 12 V LiFePO4 batteries in series
 
 This repository is intentionally separate from the SRNE project because EPEver uses RS485 and its own documented register map.
+
+## Support
+
+If this project has been useful to you and you would like to support further testing, documentation, and development, you can buy me a coffee:
+
+[☕ Buy me a coffee](https://buymeacoffee.com/tb_rtk)
+
+Support is completely optional and is greatly appreciated.
