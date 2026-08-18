@@ -47,7 +47,7 @@ Short form:
 The adapter used during testing appears in Home Assistant as:
 
 ```text
-/dev/serial/by-id/usb-FTDI_USB-RS485_Cable_AV0M39PA-if00-port0
+/dev/serial/by-id/usb-FTDI_USB-RS485_Cable_YOUR_DEVICE_ID-if00-port0
 ```
 
 Your adapter may have a different device path.
@@ -78,7 +78,7 @@ It should normally begin with:
 Example:
 
 ```text
-/dev/serial/by-id/usb-FTDI_USB-RS485_Cable_AV0M39PA-if00-port0
+/dev/serial/by-id/usb-FTDI_USB-RS485_Cable_YOUR_DEVICE_ID-if00-port0
 ```
 
 You will use this exact path in the Modbus configuration.
@@ -125,7 +125,7 @@ The serial connection section should look like this:
 ```yaml
 - name: epever
   type: serial
-  port: /dev/serial/by-id/usb-FTDI_USB-RS485_Cable_AV0M39PA-if00-port0
+  port: /dev/serial/by-id/usb-FTDI_USB-RS485_Cable_YOUR_DEVICE_ID-if00-port0
   baudrate: 115200
   bytesize: 8
   method: rtu
