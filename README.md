@@ -1,5 +1,7 @@
 # EPEver Tracer → Home Assistant
 
+![EPEver Tracer 4310A](images/Tracer%204310A.jpg)
+
 Private repository for the EPEver Tracer Modbus integration used with Home Assistant Green.
 
 **Status:** working telemetry and LOAD control; consolidated through 2026-08-17.
