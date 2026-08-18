@@ -32,6 +32,20 @@ Charging state from `0x3201` bits D3–D2:
 
 This repository is intentionally separate from the SRNE project because EPEver uses RS485 and its own documented register map.
 
+## Disclaimer
+
+This project is provided for informational and experimental purposes only.
+
+The code, configuration examples, register mappings, wiring information, and other documentation in this repository are provided "as is", without warranty of any kind.
+
+Use of this project is entirely at your own risk. You are responsible for verifying compatibility with your exact EPEver controller model, firmware, battery system, wiring, and Home Assistant setup before applying any configuration or making any changes.
+
+Incorrect configuration, register writes, wiring, or charging parameters may cause malfunction, data loss, equipment damage, battery damage, or other unintended consequences.
+
+I accept no responsibility or liability for any damage, loss, injury, malfunction, or other consequences resulting from the use, modification, or implementation of the information, code, or examples provided in this repository.
+
+By using this project, you accept full responsibility for your own installation, testing, configuration, and use.
+
 ## Support
 
 If this project has been useful to you and you would like to support further testing, documentation, and development, you can buy me a coffee:
