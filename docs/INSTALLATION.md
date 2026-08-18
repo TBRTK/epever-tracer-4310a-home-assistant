@@ -13,7 +13,7 @@ It assumes the hardware has already been connected as described in
 You need:
 
 - EPEver Tracer 4310A
-- Home Assistant Green
+- Home Assistant Green (Or Home Assistant OS running on a platform that connects to Tracer 4310A and the FTDI adapter)
 - FTDI USB-RS485 adapter
 - Working RS485 connection between the Tracer and the adapter
 - Home Assistant OS
