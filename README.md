@@ -34,6 +34,14 @@ Charging state from `0x3201` bits D3–D2:
 
 This repository is intentionally separate from the SRNE project because EPEver uses RS485 and its own documented register map.
 
+## Documentation
+
+- [Complete hardware setup](docs/HARDWARE_SETUP.md)
+- [Modbus register map](docs/REGISTER_MAP.md)
+- [Status bit decoding](docs/STATUS_BITS.md)
+- [Test log](docs/TEST_LOG.md)
+- [Next steps](docs/NEXT_STEPS.md)
+
 ## Disclaimer
 
 This project is provided for informational and experimental purposes only.
