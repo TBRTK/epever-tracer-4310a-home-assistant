@@ -42,7 +42,8 @@ This repository is intentionally separate from the SRNE project because EPEver u
 - [Test log](docs/TEST_LOG.md)
 - [Next steps](docs/NEXT_STEPS.md)
 - [Home Assistant installation guide](docs/INSTALLATION.md)
-
+- [Home Assistant entities reference](docs/ENTITIES.md)
+  
 ## Disclaimer
 
 This project is provided for informational and experimental purposes only.
