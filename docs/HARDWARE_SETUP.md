@@ -28,7 +28,7 @@ The setup described here is based on the hardware that has been physically teste
 - Linux device path used in this project:
 
 ```text
-/dev/serial/by-id/usb-FTDI_USB-RS485_Cable_AV0M39PA-if00-port0
+/dev/serial/by-id/usb-FTDI_USB-RS485_Cable_YOUR_DEVICE_ID-if00-port0
 ```
 
 Using `/dev/serial/by-id/` is preferred over `/dev/ttyUSB0` because the device path normally remains stable after rebooting Home Assistant.
@@ -139,7 +139,7 @@ Home Assistant OS should automatically detect the FTDI serial adapter.
 The adapter used in this project appears as:
 
 ```text
-/dev/serial/by-id/usb-FTDI_USB-RS485_Cable_AV0M39PA-if00-port0
+/dev/serial/by-id/usb-FTDI_USB-RS485_Cable_YOUR_DEVICE_ID-if00-port0
 ```
 
 ---
@@ -167,7 +167,7 @@ The preferred device path starts with:
 Example from this project:
 
 ```text
-/dev/serial/by-id/usb-FTDI_USB-RS485_Cable_AV0M39PA-if00-port0
+/dev/serial/by-id/usb-FTDI_USB-RS485_Cable_YOUR_DEVICE_ID-if00-port0
 ```
 
 Copy the complete path.
@@ -232,7 +232,7 @@ The serial connection section is:
 - name: epever
   type: serial
   method: rtu
-  port: /dev/serial/by-id/usb-FTDI_USB-RS485_Cable_AV0M39PA-if00-port0
+  port: /dev/serial/by-id/usb-FTDI_USB-RS485_Cable_YOUR_DEVICE_ID-if00-port0
   baudrate: 115200
   bytesize: 8
   parity: N
