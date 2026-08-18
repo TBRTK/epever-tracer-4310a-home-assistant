@@ -10,7 +10,7 @@ Private repository for the EPEver Tracer Modbus integration used with Home Assis
 - EPEver Tracer 4310A
 - USB ↔ RS485 via FTDI adapter
 - Modbus RTU, slave 1
-- Working HA serial path: `/dev/serial/by-id/usb-FTDI_USB-RS485_Cable_AV0M39PA-if00-port0`
+- Working HA serial path: `/dev/serial/by-id/usb-FTDI_USB-RS485_Cable_YOUR_DEVICE_ID-if00-port0`
 - 115200 baud, 8N1
 
 ## Current functionality
@@ -29,7 +29,7 @@ Charging state from `0x3201` bits D3–D2:
 - Communication adapter: FTDI USB to RS485 adapter
 - Interface: RS485 / Modbus RTU
 - USB device:
-  `/dev/serial/by-id/usb-FTDI_USB-RS485_Cable_AV0M39PA-if00-port0`
+  `/dev/serial/by-id/usb-FTDI_USB-RS485_Cable_YOUR_DEVICE_ID-if00-port0`
 - Battery system: 24 V nominal, 2 × 12 V LiFePO4 batteries in series
 
 This repository is intentionally separate from the SRNE project because EPEver uses RS485 and its own documented register map.
