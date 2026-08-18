@@ -41,6 +41,7 @@ This repository is intentionally separate from the SRNE project because EPEver u
 - [Status bit decoding](docs/STATUS_BITS.md)
 - [Test log](docs/TEST_LOG.md)
 - [Next steps](docs/NEXT_STEPS.md)
+- [Home Assistant installation guide](docs/INSTALLATION.md)
 
 ## Disclaimer
 
