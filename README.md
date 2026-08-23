@@ -43,7 +43,30 @@ This repository is intentionally separate from the SRNE project because EPEver u
 - [Next steps](docs/NEXT_STEPS.md)
 - [Home Assistant installation guide](docs/INSTALLATION.md)
 - [Home Assistant entities reference](docs/ENTITIES.md)
-  
+- [Home Assistant dashboard examples](docs/HOME_ASSISTANT_DASHBOARD.md)
+
+## Home Assistant dashboard examples
+
+The screenshots below are actual Home Assistant views from the working EPEver / SRNE comparison dashboard.
+
+### PV
+
+![PV comparison](images/Skjermbilde%202026-08-23%20203825.png)
+
+### Battery / charging
+
+![Battery and charging comparison](images/Skjermbilde%202026-08-23%20203914.png)
+
+### LOAD
+
+![LOAD comparison](images/Skjermbilde%202026-08-23%20203950.png)
+
+### Status and diagnostics
+
+![Status and diagnostics](images/Skjermbilde%202026-08-23%20204015.png)
+
+See `docs/HOME_ASSISTANT_DASHBOARD.md` for details about the layout and values shown.
+
 ## Disclaimer
 
 This project is provided for informational and experimental purposes only.
